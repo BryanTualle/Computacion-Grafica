@@ -1,6 +1,6 @@
 ﻿namespace WinAppSquart
 {
-    partial class fmrSquart
+    partial class fmrSquare
     {
         /// <summary>
         /// Variable del diseñador requerida.
@@ -40,25 +40,29 @@
             this.lblPerimeter = new System.Windows.Forms.Label();
             this.txtArea = new System.Windows.Forms.TextBox();
             this.txtPerimeter = new System.Windows.Forms.TextBox();
+            this.grbCanvas = new System.Windows.Forms.GroupBox();
+            this.picCanvas = new System.Windows.Forms.PictureBox();
             this.grbInput.SuspendLayout();
             this.grbButton.SuspendLayout();
             this.grbOutput.SuspendLayout();
+            this.grbCanvas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).BeginInit();
             this.SuspendLayout();
             // 
             // grbInput
             // 
             this.grbInput.Controls.Add(this.lblSideA);
             this.grbInput.Controls.Add(this.txtSideA);
-            this.grbInput.Location = new System.Drawing.Point(26, 25);
+            this.grbInput.Location = new System.Drawing.Point(12, 12);
             this.grbInput.Name = "grbInput";
-            this.grbInput.Size = new System.Drawing.Size(378, 100);
+            this.grbInput.Size = new System.Drawing.Size(378, 62);
             this.grbInput.TabIndex = 0;
             this.grbInput.TabStop = false;
             // 
             // lblSideA
             // 
             this.lblSideA.AutoSize = true;
-            this.lblSideA.Location = new System.Drawing.Point(39, 46);
+            this.lblSideA.Location = new System.Drawing.Point(39, 31);
             this.lblSideA.Name = "lblSideA";
             this.lblSideA.Size = new System.Drawing.Size(74, 13);
             this.lblSideA.TabIndex = 1;
@@ -67,7 +71,7 @@
             // 
             // txtSideA
             // 
-            this.txtSideA.Location = new System.Drawing.Point(192, 43);
+            this.txtSideA.Location = new System.Drawing.Point(192, 28);
             this.txtSideA.Name = "txtSideA";
             this.txtSideA.Size = new System.Drawing.Size(100, 20);
             this.txtSideA.TabIndex = 0;
@@ -78,15 +82,15 @@
             this.grbButton.Controls.Add(this.btnExit);
             this.grbButton.Controls.Add(this.btnReset);
             this.grbButton.Controls.Add(this.btnCalculate);
-            this.grbButton.Location = new System.Drawing.Point(26, 141);
+            this.grbButton.Location = new System.Drawing.Point(12, 80);
             this.grbButton.Name = "grbButton";
-            this.grbButton.Size = new System.Drawing.Size(378, 100);
+            this.grbButton.Size = new System.Drawing.Size(378, 67);
             this.grbButton.TabIndex = 1;
             this.grbButton.TabStop = false;
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(245, 39);
+            this.btnExit.Location = new System.Drawing.Point(240, 19);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 2;
@@ -96,7 +100,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(143, 39);
+            this.btnReset.Location = new System.Drawing.Point(139, 19);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(75, 23);
             this.btnReset.TabIndex = 1;
@@ -106,7 +110,7 @@
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(42, 39);
+            this.btnCalculate.Location = new System.Drawing.Point(40, 19);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(75, 23);
             this.btnCalculate.TabIndex = 0;
@@ -120,16 +124,16 @@
             this.grbOutput.Controls.Add(this.lblPerimeter);
             this.grbOutput.Controls.Add(this.txtArea);
             this.grbOutput.Controls.Add(this.txtPerimeter);
-            this.grbOutput.Location = new System.Drawing.Point(26, 257);
+            this.grbOutput.Location = new System.Drawing.Point(12, 153);
             this.grbOutput.Name = "grbOutput";
-            this.grbOutput.Size = new System.Drawing.Size(378, 100);
+            this.grbOutput.Size = new System.Drawing.Size(378, 86);
             this.grbOutput.TabIndex = 2;
             this.grbOutput.TabStop = false;
             // 
             // lblArea
             // 
             this.lblArea.AutoSize = true;
-            this.lblArea.Location = new System.Drawing.Point(42, 65);
+            this.lblArea.Location = new System.Drawing.Point(42, 51);
             this.lblArea.Name = "lblArea";
             this.lblArea.Size = new System.Drawing.Size(38, 13);
             this.lblArea.TabIndex = 3;
@@ -146,7 +150,7 @@
             // 
             // txtArea
             // 
-            this.txtArea.Location = new System.Drawing.Point(192, 62);
+            this.txtArea.Location = new System.Drawing.Point(192, 48);
             this.txtArea.Name = "txtArea";
             this.txtArea.Size = new System.Drawing.Size(100, 20);
             this.txtArea.TabIndex = 1;
@@ -158,21 +162,42 @@
             this.txtPerimeter.Size = new System.Drawing.Size(100, 20);
             this.txtPerimeter.TabIndex = 0;
             // 
-            // fmrSquart
+            // grbCanvas
+            // 
+            this.grbCanvas.Controls.Add(this.picCanvas);
+            this.grbCanvas.Location = new System.Drawing.Point(396, 12);
+            this.grbCanvas.Name = "grbCanvas";
+            this.grbCanvas.Size = new System.Drawing.Size(320, 227);
+            this.grbCanvas.TabIndex = 3;
+            this.grbCanvas.TabStop = false;
+            // 
+            // picCanvas
+            // 
+            this.picCanvas.Location = new System.Drawing.Point(6, 12);
+            this.picCanvas.Name = "picCanvas";
+            this.picCanvas.Size = new System.Drawing.Size(300, 200);
+            this.picCanvas.TabIndex = 0;
+            this.picCanvas.TabStop = false;
+            // 
+            // fmrSquare
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(453, 392);
+            this.ClientSize = new System.Drawing.Size(720, 261);
+            this.Controls.Add(this.grbCanvas);
             this.Controls.Add(this.grbOutput);
             this.Controls.Add(this.grbButton);
             this.Controls.Add(this.grbInput);
-            this.Name = "fmrSquart";
+            this.Name = "fmrSquare";
             this.Text = "Cuadrado";
+            this.Load += new System.EventHandler(this.fmrSquart_Load);
             this.grbInput.ResumeLayout(false);
             this.grbInput.PerformLayout();
             this.grbButton.ResumeLayout(false);
             this.grbOutput.ResumeLayout(false);
             this.grbOutput.PerformLayout();
+            this.grbCanvas.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -191,6 +216,8 @@
         private System.Windows.Forms.Label lblPerimeter;
         private System.Windows.Forms.TextBox txtArea;
         private System.Windows.Forms.TextBox txtPerimeter;
+        private System.Windows.Forms.GroupBox grbCanvas;
+        private System.Windows.Forms.PictureBox picCanvas;
     }
 }
 

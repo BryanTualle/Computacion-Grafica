@@ -44,16 +44,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="fmrSquart.cs">
+    <Compile Include="fmrSquare.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fmrSquart.Designer.cs">
-      <DependentUpon>fmrSquart.cs</DependentUpon>
+    <Compile Include="fmrSquare.Designer.cs">
+      <DependentUpon>fmrSquare.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="fmrSquart.resx">
-      <DependentUpon>fmrSquart.cs</DependentUpon>
+    <EmbeddedResource Include="fmrSquare.resx">
+      <DependentUpon>fmrSquare.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

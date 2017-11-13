@@ -1,6 +1,8 @@
-﻿namespace WinAppTriangle
+﻿using System;
+
+namespace WinAppRectangle
 {
-    partial class frmTriangle
+    partial class frmRectangle
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,10 +31,8 @@
         private void InitializeComponent()
         {
             this.grbInputs = new System.Windows.Forms.GroupBox();
-            this.txtSideC = new System.Windows.Forms.TextBox();
-            this.txtSideB = new System.Windows.Forms.TextBox();
-            this.txtSideA = new System.Windows.Forms.TextBox();
-            this.lblSideC = new System.Windows.Forms.Label();
+            this.txtSideHeight = new System.Windows.Forms.TextBox();
+            this.txtSideWidth = new System.Windows.Forms.TextBox();
             this.lblSideB = new System.Windows.Forms.Label();
             this.lblSideA = new System.Windows.Forms.Label();
             this.grbProcess = new System.Windows.Forms.GroupBox();
@@ -55,80 +55,64 @@
             // 
             // grbInputs
             // 
-            this.grbInputs.Controls.Add(this.txtSideC);
-            this.grbInputs.Controls.Add(this.txtSideB);
-            this.grbInputs.Controls.Add(this.txtSideA);
-            this.grbInputs.Controls.Add(this.lblSideC);
+            this.grbInputs.Controls.Add(this.txtSideHeight);
+            this.grbInputs.Controls.Add(this.txtSideWidth);
             this.grbInputs.Controls.Add(this.lblSideB);
             this.grbInputs.Controls.Add(this.lblSideA);
-            this.grbInputs.Location = new System.Drawing.Point(36, 12);
+            this.grbInputs.Location = new System.Drawing.Point(12, 12);
             this.grbInputs.Name = "grbInputs";
-            this.grbInputs.Size = new System.Drawing.Size(311, 100);
+            this.grbInputs.Size = new System.Drawing.Size(343, 83);
             this.grbInputs.TabIndex = 0;
             this.grbInputs.TabStop = false;
             // 
-            // txtSideC
+            // txtSideHeight
             // 
-            this.txtSideC.Location = new System.Drawing.Point(168, 65);
-            this.txtSideC.Name = "txtSideC";
-            this.txtSideC.Size = new System.Drawing.Size(100, 20);
-            this.txtSideC.TabIndex = 5;
+            this.txtSideHeight.Location = new System.Drawing.Point(226, 48);
+            this.txtSideHeight.Name = "txtSideHeight";
+            this.txtSideHeight.Size = new System.Drawing.Size(100, 20);
+            this.txtSideHeight.TabIndex = 4;
             // 
-            // txtSideB
+            // txtSideWidth
             // 
-            this.txtSideB.Location = new System.Drawing.Point(168, 42);
-            this.txtSideB.Name = "txtSideB";
-            this.txtSideB.Size = new System.Drawing.Size(100, 20);
-            this.txtSideB.TabIndex = 4;
-            // 
-            // txtSideA
-            // 
-            this.txtSideA.Location = new System.Drawing.Point(168, 17);
-            this.txtSideA.Name = "txtSideA";
-            this.txtSideA.Size = new System.Drawing.Size(100, 20);
-            this.txtSideA.TabIndex = 3;
-            // 
-            // lblSideC
-            // 
-            this.lblSideC.AutoSize = true;
-            this.lblSideC.Location = new System.Drawing.Point(22, 68);
-            this.lblSideC.Name = "lblSideC";
-            this.lblSideC.Size = new System.Drawing.Size(141, 13);
-            this.lblSideC.TabIndex = 2;
-            this.lblSideC.Text = "Ingrese valor para el lado c :";
+            this.txtSideWidth.Location = new System.Drawing.Point(226, 13);
+            this.txtSideWidth.Name = "txtSideWidth";
+            this.txtSideWidth.Size = new System.Drawing.Size(100, 20);
+            this.txtSideWidth.TabIndex = 3;
             // 
             // lblSideB
             // 
             this.lblSideB.AutoSize = true;
-            this.lblSideB.Location = new System.Drawing.Point(22, 45);
+            this.lblSideB.Location = new System.Drawing.Point(6, 16);
             this.lblSideB.Name = "lblSideB";
-            this.lblSideB.Size = new System.Drawing.Size(141, 13);
+            this.lblSideB.Size = new System.Drawing.Size(157, 13);
             this.lblSideB.TabIndex = 1;
-            this.lblSideB.Text = "Ingrese valor para el lado b :";
+            this.lblSideB.Text = "Ingrese un valor para el ancho :";
+            this.lblSideB.Click += new System.EventHandler(this.lblSideB_Click);
             // 
             // lblSideA
             // 
             this.lblSideA.AutoSize = true;
-            this.lblSideA.Location = new System.Drawing.Point(22, 20);
+            this.lblSideA.Location = new System.Drawing.Point(6, 51);
             this.lblSideA.Name = "lblSideA";
-            this.lblSideA.Size = new System.Drawing.Size(141, 13);
+            this.lblSideA.Size = new System.Drawing.Size(153, 13);
             this.lblSideA.TabIndex = 0;
-            this.lblSideA.Text = "Ingrese valor para el lado a :";
+            this.lblSideA.Text = "Ingrese un valor para la altura :";
+            this.lblSideA.Click += new System.EventHandler(this.lblSideA_Click);
             // 
             // grbProcess
             // 
             this.grbProcess.Controls.Add(this.btnExit);
             this.grbProcess.Controls.Add(this.btnReset);
             this.grbProcess.Controls.Add(this.btnCalculate);
-            this.grbProcess.Location = new System.Drawing.Point(36, 118);
+            this.grbProcess.Location = new System.Drawing.Point(12, 101);
             this.grbProcess.Name = "grbProcess";
-            this.grbProcess.Size = new System.Drawing.Size(311, 100);
+            this.grbProcess.Size = new System.Drawing.Size(343, 65);
             this.grbProcess.TabIndex = 1;
             this.grbProcess.TabStop = false;
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(208, 35);
+            this.btnExit.Location = new System.Drawing.Point(226, 19);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 2;
@@ -138,7 +122,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(118, 35);
+            this.btnReset.Location = new System.Drawing.Point(131, 19);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(75, 23);
             this.btnReset.TabIndex = 1;
@@ -148,7 +132,7 @@
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(28, 35);
+            this.btnCalculate.Location = new System.Drawing.Point(29, 19);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(75, 23);
             this.btnCalculate.TabIndex = 0;
@@ -162,22 +146,22 @@
             this.grbOutputs.Controls.Add(this.txtPerimeter);
             this.grbOutputs.Controls.Add(this.lblArea);
             this.grbOutputs.Controls.Add(this.lblPerimeter);
-            this.grbOutputs.Location = new System.Drawing.Point(36, 224);
+            this.grbOutputs.Location = new System.Drawing.Point(12, 172);
             this.grbOutputs.Name = "grbOutputs";
-            this.grbOutputs.Size = new System.Drawing.Size(311, 100);
+            this.grbOutputs.Size = new System.Drawing.Size(343, 87);
             this.grbOutputs.TabIndex = 2;
             this.grbOutputs.TabStop = false;
             // 
             // txtArea
             // 
-            this.txtArea.Location = new System.Drawing.Point(168, 43);
+            this.txtArea.Location = new System.Drawing.Point(183, 51);
             this.txtArea.Name = "txtArea";
             this.txtArea.Size = new System.Drawing.Size(100, 20);
             this.txtArea.TabIndex = 3;
             // 
             // txtPerimeter
             // 
-            this.txtPerimeter.Location = new System.Drawing.Point(168, 17);
+            this.txtPerimeter.Location = new System.Drawing.Point(183, 19);
             this.txtPerimeter.Name = "txtPerimeter";
             this.txtPerimeter.Size = new System.Drawing.Size(100, 20);
             this.txtPerimeter.TabIndex = 2;
@@ -185,7 +169,7 @@
             // lblArea
             // 
             this.lblArea.AutoSize = true;
-            this.lblArea.Location = new System.Drawing.Point(25, 42);
+            this.lblArea.Location = new System.Drawing.Point(26, 51);
             this.lblArea.Name = "lblArea";
             this.lblArea.Size = new System.Drawing.Size(35, 13);
             this.lblArea.TabIndex = 1;
@@ -194,7 +178,7 @@
             // lblPerimeter
             // 
             this.lblPerimeter.AutoSize = true;
-            this.lblPerimeter.Location = new System.Drawing.Point(25, 20);
+            this.lblPerimeter.Location = new System.Drawing.Point(24, 22);
             this.lblPerimeter.Name = "lblPerimeter";
             this.lblPerimeter.Size = new System.Drawing.Size(57, 13);
             this.lblPerimeter.TabIndex = 0;
@@ -203,32 +187,34 @@
             // grbCanvas
             // 
             this.grbCanvas.Controls.Add(this.picCanvas);
-            this.grbCanvas.Location = new System.Drawing.Point(363, 29);
+            this.grbCanvas.Location = new System.Drawing.Point(361, 12);
             this.grbCanvas.Name = "grbCanvas";
-            this.grbCanvas.Size = new System.Drawing.Size(320, 227);
-            this.grbCanvas.TabIndex = 8;
+            this.grbCanvas.Size = new System.Drawing.Size(371, 247);
+            this.grbCanvas.TabIndex = 3;
             this.grbCanvas.TabStop = false;
             // 
             // picCanvas
             // 
-            this.picCanvas.Location = new System.Drawing.Point(6, 9);
+            this.picCanvas.Location = new System.Drawing.Point(6, 16);
             this.picCanvas.Name = "picCanvas";
             this.picCanvas.Size = new System.Drawing.Size(300, 200);
             this.picCanvas.TabIndex = 0;
             this.picCanvas.TabStop = false;
             // 
-            // frmTriangle
+            // frmRectangle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(709, 350);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScroll = true;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.ClientSize = new System.Drawing.Size(744, 284);
             this.Controls.Add(this.grbCanvas);
             this.Controls.Add(this.grbOutputs);
             this.Controls.Add(this.grbProcess);
             this.Controls.Add(this.grbInputs);
-            this.Name = "frmTriangle";
-            this.Text = "Triangulo";
-            this.Load += new System.EventHandler(this.frmTriangle_Load);
+            this.Name = "frmRectangle";
+            this.Text = "Rectangulo";
+            this.Load += new System.EventHandler(this.frmRectangle_Load);
             this.grbInputs.ResumeLayout(false);
             this.grbInputs.PerformLayout();
             this.grbProcess.ResumeLayout(false);
@@ -240,26 +226,30 @@
 
         }
 
+        private void txtSideA_TextChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
         private System.Windows.Forms.GroupBox grbInputs;
-        private System.Windows.Forms.TextBox txtSideC;
+        private System.Windows.Forms.GroupBox grbProcess;
+        private System.Windows.Forms.GroupBox grbOutputs;
         private System.Windows.Forms.TextBox txtSideB;
-        private System.Windows.Forms.TextBox txtSideA;
-        private System.Windows.Forms.Label lblSideC;
         private System.Windows.Forms.Label lblSideB;
         private System.Windows.Forms.Label lblSideA;
-        private System.Windows.Forms.GroupBox grbProcess;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnCalculate;
-        private System.Windows.Forms.GroupBox grbOutputs;
         private System.Windows.Forms.TextBox txtArea;
         private System.Windows.Forms.TextBox txtPerimeter;
         private System.Windows.Forms.Label lblArea;
         private System.Windows.Forms.Label lblPerimeter;
         private System.Windows.Forms.GroupBox grbCanvas;
         private System.Windows.Forms.PictureBox picCanvas;
+        private System.Windows.Forms.TextBox txtSideWidth;
+        private System.Windows.Forms.TextBox txtSideHeight;
     }
 }
 

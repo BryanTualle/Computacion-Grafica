@@ -75,7 +75,7 @@ namespace WinAppGeometricShapesV2
             mPen = new Pen(Color.Red, 3);
             //Graficar un circulo en funcion de una elipse.
             mGraph.DrawEllipse(mPen, 0, 0, 2 * mRadius * SF, 2 * mRadius * SF);
-            mGraph.DrawRectangle(mPen,0,0,mA*SF,Mb *SF);
+            //mGraph.DrawRectangle(mPen,0,0,mA*SF,Mb *SF);
         }
 
     }

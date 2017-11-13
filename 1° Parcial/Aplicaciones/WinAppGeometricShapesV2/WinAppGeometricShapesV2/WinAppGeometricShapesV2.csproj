@@ -66,11 +66,11 @@
     <Compile Include="frmRectangle.Designer.cs">
       <DependentUpon>frmRectangle.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSquart.cs">
+    <Compile Include="frmSquare.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSquart.Designer.cs">
-      <DependentUpon>frmSquart.cs</DependentUpon>
+    <Compile Include="frmSquare.Designer.cs">
+      <DependentUpon>frmSquare.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTriangle.cs">
       <SubType>Form</SubType>
@@ -85,6 +85,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRectangle.resx">
+      <DependentUpon>frmRectangle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSquare.resx">
+      <DependentUpon>frmSquare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTriangle.resx">
+      <DependentUpon>frmTriangle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -176,7 +176,7 @@
             this.grbCanvas.Controls.Add(this.picCanvas);
             this.grbCanvas.Location = new System.Drawing.Point(403, 12);
             this.grbCanvas.Name = "grbCanvas";
-            this.grbCanvas.Size = new System.Drawing.Size(368, 239);
+            this.grbCanvas.Size = new System.Drawing.Size(336, 239);
             this.grbCanvas.TabIndex = 6;
             this.grbCanvas.TabStop = false;
             // 
@@ -193,7 +193,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(802, 271);
+            this.ClientSize = new System.Drawing.Size(784, 271);
             this.Controls.Add(this.grbCanvas);
             this.Controls.Add(this.grbInputs);
             this.Controls.Add(this.grbProcess);

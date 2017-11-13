@@ -10,36 +10,38 @@ using System.Windows.Forms;
 
 namespace WinAppGeometricShapesV2
 {
-    public partial class frmRectangle : Form
+    public partial class frmSquare : Form
     {
 
-        private CRectangle ObjRectangle = new CRectangle();
+        private CSquare ObjSquare = new CSquare();
 
-        
-
-        public frmRectangle()
+        public frmSquare()
         {
             InitializeComponent();
+        }
+
+        private void frmSquart_Load(object sender, EventArgs e)
+        {
 
         }
 
-        private void frmRectangle_Load(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            ObjRectangle.ReadData(txtSideHeight, txtSideWidth);
-            ObjRectangle.AreaRectangle();
-            ObjRectangle.PerimeterRectangle();
-            ObjRectangle.PrintData(txtPerimeter, txtArea);
-            ObjRectangle.DrawShape(picCanvas);
+            ObjSquare.ReadData(txtSideA);
+            ObjSquare.AreaSquare();
+            ObjSquare.PerimeterSquare();
+            ObjSquare.PrintData(txtPerimeter, txtArea);
+            ObjSquare.DrawShape(picCanvas);
         }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            ObjRectangle.InitializeData(txtSideHeight,txtSideWidth,txtPerimeter,txtArea,picCanvas);
+            ObjSquare.InitializeData(txtSideA,txtPerimeter,txtArea,picCanvas);
         }
 
         private void btnExit_Click(object sender, EventArgs e)

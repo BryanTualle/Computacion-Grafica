@@ -15,12 +15,11 @@ namespace WinAppGeometricShapesV2
         public frmMenu()
         {
             InitializeComponent();
-
         }
 
         private void btnSquart_Click(object sender, EventArgs e)
         {
-            frmSquart ObjForm = new frmSquart();
+            frmSquare ObjForm = new frmSquare();
             ObjForm.Show();
         }
 
